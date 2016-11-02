@@ -1,0 +1,77 @@
+	body {
+      margin-top: 0px;
+	  margin: 0px;
+	  padding: 0px;
+	  font-family: 'Arial' , seriff;	
+	  text-align: center;
+	  background-color: white;
+	}
+	
+    #title {
+      color: #99CBC2;
+      font-size: 50px;
+	  font-weight: bold;
+	  margin-top: 75px;
+	  text-align: center;
+	  text-decoration: underline;
+    }
+	
+	.text {
+	  font-size: 18px;
+	  color: black;
+	  margin: 0 30px 0 30px;
+	}
+	
+	.list {
+	  margin: 0 auto;
+	  display: table;
+	  text-align: left;
+	  font-size: 18px;
+	}
+	
+	.topheader {
+	  margin-top: 75px;
+	  color: #99CBC2;
+	}
+	
+	.header {
+	  margin-top: 30px;
+	  color: #99CBC2;
+	}
+	
+	.profilepic {
+	  border-style: solid;
+	}
+	
+	.nav {
+	  list-style-type: none;
+      color: #99CBC2;
+	  padding: 0;
+	  margin: 0;
+	  overflow: hidden;
+	  background-color: #99CBC2;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+	
+	 .nav li {
+	  float: left;
+	
+	}
+	
+	.nav > li > a {
+	  color: #ffffff;
+	  display: block;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+	.nav > li > a:hover {
+		background-color: #91E6D6;
+	}
+	
+	.active {
+		background-color: #91E6D6;	
+	}
