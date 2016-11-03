@@ -46,6 +46,17 @@
 	  margin: 0 auto;
 	}
 	
+	.links {
+	  text-decoration: none;
+	  font-size: 22px;
+	  color: #99CBC2;
+      transition: all 300ms ease-in-out;
+	  -webkit-transition: all 300ms ease-in-out;
+	  -moz-transition: all 300ms ease-in-out;
+	  -o-transition: all 300ms ease-in-out;
+	}
+	
+	
 	
 /*----------Index----------*/
 	
@@ -166,7 +177,6 @@
 	  font-size: 28px;
 	  font-weight: bold;
 	  color: #99CBC2;
-	  margin: 0 0px 0 0px;
       transition: all 300ms ease-in-out;
 	  -webkit-transition: all 300ms ease-in-out;
 	  -moz-transition: all 300ms ease-in-out;
