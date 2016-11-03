@@ -153,3 +153,9 @@
 	footer  div  nav  ul  li  a:hover {
 	  color: #91E6D6;
 	}
+
+/*----------404----------*/
+
+    #DANGER {
+      font-size="100px"
+    }  
