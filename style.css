@@ -157,5 +157,22 @@
 /*----------404----------*/
 
     #DANGER {
-      font-size="100px"
+	  margin-top: 200px;
+      font-size: 70px;
     }  
+	
+	.missingbold {
+	  text-decoration: none;
+	  font-size: 28px;
+	  font-weight: bold;
+	  color: #99CBC2;
+	  margin: 0 0px 0 0px;
+      transition: all 300ms ease-in-out;
+	  -webkit-transition: all 300ms ease-in-out;
+	  -moz-transition: all 300ms ease-in-out;
+	  -o-transition: all 300ms ease-in-out;
+	}
+	
+	p a:hover {
+	  color: #91E6D6;
+	}
