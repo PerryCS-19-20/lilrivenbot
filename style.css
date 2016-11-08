@@ -32,6 +32,7 @@
 	
 	.header {
 	  margin-top: 35px;
+	  margin-bottom: 20px;
 	  color: #99CBC2;
 	  font-size: 50px;
 	}
@@ -143,17 +144,23 @@
 	footer  div  nav  ul {
 	  list-style-type: none;
 	  margin: 0;
+	  position: relative;
+	  top: 40px;
 	  left: 0;
 	  bottom: 0;
+	  right: 0;
 	  padding: 15px 0px 15px 0px;
 	  overflow: hidden;
 	  background-color: #99CBC2;
 	  width: 100%;
-	  position: absolute;
+	}
+	
+	header  div  nav  ul {
+	  list-style-type: none;
 	}
 	
 	 footer  div  nav  ul  li {
-	  float: left;
+	  display: inline-block;
 	}
 	
 	footer  div  nav  ul  li  a {
@@ -173,6 +180,92 @@
 	}
 /*----------Contact----------*/
 
+	@media (max-width: 500px) {
+	  #logo li {
+		width: 50%;
+	  }
+	}
+
+	 #logo {
+		max-width: 700px;
+		margin: auto;
+		padding: 0;
+		font-size: 20px;
+		list-style: none;
+		background-color: #ffffff;
+	}
+	    	  
+	#logo li {
+      display: inline-block;
+      width: 25%;
+      vertical-align: middle;
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	.logo-cell {
+		display: block;
+		position: relative;
+		overflow: hidden;
+	}		
+	
+	.logo-img {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  border: none;
+	  transform: scale(1);
+	  transition:all 1s;
+	}
+	
+	logo-li:hover .logo-img {
+		transform:scale(1.05);
+	}
+	
+	.logo-overlay {
+	  position: absolute;
+	  display: block;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  margin: auto;
+	  background: #99CBC2 url(img/link.png) no-repeat center 20%;
+	  background-size: 50px 50px;
+	  opacity: 0;
+	  transition: all 0.6s;
+	}
+	
+	#logo li:hover .logo-overlay {
+	  opacity: 0.8;
+	}
+	
+	.logo-text {
+	  display: block;
+	  padding: 0;
+	  box-sizing: border-box;
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	  text-align: center;
+	  text-transform: capitalize;
+	  font-size: 50px;
+	  font-weight: 900;
+	  font-family: Kalos;
+	  font-weight:normal!important;
+	  top: 40%;
+	  color: black;
+	  opacity: 0;
+	  transform: translateY(-20px);
+	  transition: all .3s		
+	}
+	
+	#logo li:hover .logo-text {
+	  transform: translateY(0px);
+	  opacity:0.9;
+	}
+	
 	.buddylinks {
 	  text-decoration: none;
 	  font-size: 40px;
@@ -187,7 +280,92 @@
 	.buddylinks:hover {
 	  color: #99CBC2;
 	}
+	
+	@media (max-width: 500px) {
+	  #rig li {
+		width: 50%;
+	  }
+	}
 
+	 #rig {
+		max-width: 700px;
+		margin: auto;
+		padding: 0;
+		font-size: 20px;
+		list-style: none;
+		background-color: #ffffff;
+	}
+	    	  
+	#rig li {
+      display: inline-block;
+      width: 25%;
+      vertical-align: middle;
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	.rig-cell {
+		display: block;
+		position: relative;
+		overflow: hidden;
+	}		
+	
+	.rig-img {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  border: none;
+	  transform: scale(1);
+	  transition:all 1s;
+	}
+	
+	rig-li:hover .rig-img {
+		transform:scale(1.05);
+	}
+	
+	.rig-overlay {
+	  position: absolute;
+	  display: block;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  margin: auto;
+	  background: #99CBC2 url(img/link.png) no-repeat center 20%;
+	  background-size: 50px 50px;
+	  opacity: 0;
+	  transition: all 0.6s;
+	}
+	
+	#rig li:hover .rig-overlay {
+	  opacity: 0.8;
+	}
+	
+	.rig-text {
+	  display: block;
+	  padding: 0;
+	  box-sizing: border-box;
+	  position: absolute;
+	  left: 0;
+	  width: 100%;
+	  text-align: center;
+	  text-transform: capitalize;
+	  font-size: 28px;
+	  font-weight: bold;
+	  font-family: Kalos;
+	  font-weight:normal!important;
+	  top: 40%;
+	  color: black;
+	  opacity: 0;
+	  transform: translateY(-20px);
+	  transition: all .3s		
+	}
+	
+	#rig li:hover .rig-text {
+	  transform: translateY(0px);
+	  opacity:0.9;
+	}
 
 /*----------404----------*/
 
