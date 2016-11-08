@@ -56,7 +56,7 @@
 	  font-size: 26px;
 	  font-weight: 400;
 	  color: #000000;
-      transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
 	  -webkit-transition: all 300ms ease-in-out;
 	  -moz-transition: all 300ms ease-in-out;
 	  -o-transition: all 300ms ease-in-out;
@@ -144,10 +144,10 @@
 	footer  div  nav  ul {
 	  list-style-type: none;
 	  margin: 0;
-	  position: relative;
-	  top: 40px;
+	  position: fixed;
+	  height: 40px;
 	  left: 0;
-	  bottom: 0;
+	  bottom: 0px;
 	  right: 0;
 	  padding: 15px 0px 15px 0px;
 	  overflow: hidden;
@@ -366,6 +366,11 @@
 	  transform: translateY(0px);
 	  opacity:0.9;
 	}
+/*----------Fun Stuff----------*/
+
+canvas {
+    border: 1px solid black;
+}
 
 /*----------404----------*/
 
