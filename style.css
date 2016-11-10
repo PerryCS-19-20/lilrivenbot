@@ -47,7 +47,7 @@
 	}
 	
 	.wrapper {
-      width: 960px
+          width: 960px;
 	  margin: 0 auto;
 	}
 	
@@ -102,7 +102,7 @@
 	  height: 75px;
 	  position: absolute;
 	  top: 0px;
-      right: 0px;
+          right: 0px;
 	  left: 0px;
 	  background-color: #99CBC2;
 	}
@@ -143,15 +143,15 @@
 
 	footer  div  nav  ul {
 	  list-style-type: none;
-	  position: fixed;
-	  height: 30px;
+	  position: relative;
+	  height: 15px;
+          width: 100%;
 	  left: 0;
 	  bottom: 0px;
 	  right: 0;
-	  padding: 15px 0px 15px 0px;
+	  padding: 15px 10px 15px 10px;
 	  overflow: hidden;
 	  background-color: #99CBC2;
-	  width: 100%;
 	}
 	
 	header  div  nav  ul {
