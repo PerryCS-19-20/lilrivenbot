@@ -411,6 +411,10 @@
       font-size: 60px;
       }
       
+    canvas {
+      border: 1px solid black;
+      }
+      
     .spanChangeColor {
       background-color: lightgrey;
       border: 3px solid black ;
