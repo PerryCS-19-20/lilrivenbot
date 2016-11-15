@@ -71,7 +71,7 @@
 	
     .links {
       text-decoration: none;
-      padding: 15px 15px 15px 15px;
+      padding: 0;
       font-size: 26px;
       font-weight: 400;
       color: #000000;
@@ -387,7 +387,46 @@
       transform: translateY(0px);
       opacity:0.9;
       }
+      
 /*----------Fun Stuff----------*/
+
+
+    .linkList {
+      text-decoration: none;
+      padding: 0;
+      font-weight: 400;
+      color: #000000;
+      list-style-type: none;
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      }
+    
+    .linkList li {
+      margin: 100px;
+      }
+      
+    .linkList li a {
+      font-size: 60px;
+      }
+      
+    .spanChangeColor {
+      background-color: lightgrey;
+      border: 3px solid black ;
+      font-size: 50px;
+      font-family: Kalos;
+      width: auto;
+      text-align: center;
+      margin: 50px;
+      }
+      
+    #spanModify {
+      font-size: 26px;
+      font-weight: 400;
+      color: black;
+      margin: 0px 0px 0px 0px; 
+      }
 
 /*----------404----------*/
 
