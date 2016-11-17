@@ -2,7 +2,7 @@
 <!-- https://goo.gl/NIeGJX -->
 <html>
   <head>
-    <title> Test HTML </title>
+    <title> Javascript Events </title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <script type="text/javascript" src="../scripts.js"></script>
   </head>
@@ -29,16 +29,16 @@
         
     <div class="body">
         
-      <h1 class="header"> Modifying the page with Javascript </h1>  
+      <h1 class="header"> Creating Elements </h1> 
+      
+      <textarea style="font-family:Kalos; font-size: 18px;"
+                rows="10" cols="80"
+                id="textInputList">Input HTML to test here</textarea>
+      <br>
+        <button style="margin: 10px;" onclick="createList();"> Test! </button>
+      <br>
+        <ul id="spanModifyList"> </ul>
         
-      <textarea style="font-family: Kalos; font-size: 18px;" 
-                rows="10" cols="80" 
-                id="textInputHTML">Input HTML to test here</textarea>
-      <br>
-        <button style="margin: 10px;" onclick="testHTML();"> Test! </button>
-      <br>
-        <span id="spanModifytestHTML"> </span>
-    
     </div>
         
         <!-- END BODY -->
