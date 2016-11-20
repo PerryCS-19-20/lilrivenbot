@@ -38,19 +38,12 @@
       left: 0;
       right: 0;
       }
-        
-	
+        	
     .text {
       font-size: 26px;
       font-weight: 400;
       color: black;
       margin: 0px 0px 0px 0px;
-      }
-
-    .topheader {
-      margin-top: 100px;
-      color: #99CBC2;
-      font-size: 50px;
       }
 	
     .header {
@@ -59,8 +52,7 @@
       color: #99CBC2;
       font-size: 50px;
       }
-	
-	
+
     .list {
       margin: 10px auto;
       display: table;
