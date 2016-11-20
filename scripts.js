@@ -31,4 +31,14 @@ function createList() {
   newItem.textContent = userInput.value;
   theSpan.appendChild(newItem);
   }
+  
+function chalkboard() {
+  var userInput = document.getElementById("textInputChalkboard");
+  var theSpan = document.getElementById("spanModifyChalkboard");
+    for(var i = 0; i < 100 ; i++) {
+      var newItem = document.createElement("li");  
+      newItem.textContent = "I will not" + " " + userInput.value;
+      theSpan.appendChild(newItem);
+    }
+  }
 // ----- END FUN STUFF -----//
