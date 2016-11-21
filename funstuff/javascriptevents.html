@@ -29,16 +29,27 @@
         
     <div class="body">
         
-      <h1 class="header"> Chalkboard </h1> 
-      
-      <textarea style="font-family:Kalos; font-size: 18px;"
-                rows="10" cols="80"
-                id="textInputChalkboard">Input HTML to test here</textarea>
-      <br>
-        <button style="margin: 10px;" onclick="chalkboard();"> Repeat! </button>
-      <br>
-        <ol id="spanModifyChalkboard"></ol>
+      <h1 class="header"> Javascript Events </h1>  
         
+      <div class="spanChangeColor" 
+        onmouseover="changeBackground('red');" 
+        onmouseout="changeBackground('white');"> 
+        <p style="margin: 30px; width: auto;">Red</p> </div>
+        
+      <br>
+      
+      <div class="spanChangeColor" 
+        onmouseover="changeBackground('green');"
+        onmouseout="changeBackground('white');"> 
+        <p style="margin: 30px; width: auto;">Green</p> </div>
+        
+      <br>   
+      
+      <div class="spanChangeColor" 
+        onmouseover="changeBackground('blue');" 
+        onmouseout="changeBackground('white');"> 
+        <p style="margin: 30px;">Blue</p> </div>
+    
     </div>
         
         <!-- END BODY -->
