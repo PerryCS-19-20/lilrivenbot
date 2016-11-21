@@ -41,4 +41,23 @@ function chalkboard() {
       theSpan.appendChild(newItem);
     }
   }
+  
+    var PLAYER = "X";
+  function play(cellid) {
+     
+     var cell = document.getElementById(cellid);
+     var spanTac = document.getElementById("spanTic");
+     
+     if(cell.textContent === "") {
+       cell.textContent = PLAYER;        
+         if(PLAYER === "X") {
+           PLAYER = "O";
+         } else {
+           PLAYER = "X";
+         } 
+        } else {
+        spanTac.textContnet = "Invalid move!";
+       }      
+     }
+
 // ----- END FUN STUFF -----//
