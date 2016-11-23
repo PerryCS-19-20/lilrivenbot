@@ -11,9 +11,18 @@
       padding: 0;
       font-family: 'Kalos' , seriff; 
       background-color: #ffffff;     
-      text-align: center;          
+      text-align: center;           
       }
-        
+      
+    ::selection {
+      background: #99CBC2;
+      color: #ffffff;
+      }
+    ::-moz-selection {
+      background: #99CBC2;
+      color: #ffffff;
+      }
+      
     .container {
       min-height: calc(100vh - 45px);          
     }
@@ -432,6 +441,11 @@
       border: 1px solid black;     
       font-size: 80px;
     }
+    
+    #spanTic {
+      margin-top: 30px;
+      font-size: 50px;          
+      }
 
 
 /*----------404----------*/
