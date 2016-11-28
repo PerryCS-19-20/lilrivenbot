@@ -41,58 +41,64 @@ function chalkboard() {
       theSpan.appendChild(newItem);
     }
   }
+  
     var WON = false;
+    var PLAYER = "O";
     var PLAYER = "X";
   function play(cellid) {
      
    var cell = document.getElementById(cellid);
    var spanTac = document.getElementById("spanTic");
      
-     if(cell.textContent === "") {
+     if((cell.textContent === "") && (WON === false)) {
        cell.textContent = PLAYER; 
-       checkWinner();
+       
      
-         if ((PLAYER === "X") && 
-            (WON === false)) {  
+         if (PLAYER === "X") {  
            PLAYER = "O";
            spanTac.textContent = "O's turn";
+           checkWinner("X");
          } else {
            PLAYER = "X";
            spanTac.textContent = "X's turn";
+           checkWinner("O");
          } 
          
-       } else {
+       } else if (WON === false){
          spanTac.textContent = "Invalid move!";
-       }      
+       }  
+       
      }
      
-  function checkWinner() {    
-   checkWinner3("tdTic1", "tdTic2", "tdTic3");
-   checkWinner3("tdTic4", "tdTic5", "tdTic6");
-   checkWinner3("tdTic7", "tdTic8", "tdTic9");
-   checkWinner3("tdTic1", "tdTic4", "tdTic7");
-   checkWinner3("tdTic2", "tdTic5", "tdTic9");
-   checkWinner3("tdTic3", "tdTic6", "tdTic9");
-   checkWinner3("tdTic1", "tdTic5", "tdTic9");
-   checkWinner3("tdTic3", "tdTic5", "tdTic9");
+  function checkWinner(player) {    
+   checkWinner3("tdTic1", "tdTic2", "tdTic3", player);
+   checkWinner3("tdTic4", "tdTic5", "tdTic6", player);
+   checkWinner3("tdTic7", "tdTic8", "tdTic9", player);
+   checkWinner3("tdTic1", "tdTic4", "tdTic7", player);
+   checkWinner3("tdTic2", "tdTic5", "tdTic9", player);
+   checkWinner3("tdTic3", "tdTic6", "tdTic9", player);
+   checkWinner3("tdTic1", "tdTic5", "tdTic9", player);
+   checkWinner3("tdTic3", "tdTic5", "tdTic9", player);
    }
    
-  function checkWinner3(cell1id, cell2id ,cell3id) {
+  function checkWinner3(cell1id, cell2id ,cell3id, player) {
     var cell1 = document.getElementById(cell1id);
     var cell2 = document.getElementById(cell2id);
     var cell3 = document.getElementById(cell3id);
     var spanTac = document.getElementById("spanTic");
-    var WON;
+
 
      
     if ((cell1.textContent === cell2.textContent) && 
         (cell2.textContent === cell3.textContent) && 
         (cell1.textContent !== "")) {
-       }
+      WON = true;
         
-    if(WON === true) {
-      spanTac.textContent  = PLAYER + " " + "is the winner!";
-      } 
+      spanTac.textContent  = player + " " + "is the winner!";
+      cell1.style.backgroundColor = "#b3d8d2";
+      cell2.style.backgroundColor = "#b3d8d2";
+      cell3.style.backgroundColor = "#b3d8d2";
     }
+  }
  
 // ----- END FUN STUFF -----//
