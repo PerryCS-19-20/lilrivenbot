@@ -446,6 +446,24 @@
       margin-top: 30px;
       font-size: 50px;          
       }
+      
+    #timesTable, #timesTable td, #timesTable th {
+      display: inline-block;
+      border: solid 1px;    
+      }
+      td {
+        text-align: right;  
+        }
+        
+    #tableRow {
+      width: 30px;
+      height: 30px;
+      }
+        
+    #tableData {
+      width: 30px;
+      height: 30px;
+      }
 
 
 /*----------404----------*/
