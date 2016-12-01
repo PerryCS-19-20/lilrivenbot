@@ -113,14 +113,29 @@ function chalkboard() {
       var tableRow = document.createElement("tr");
       tableRow.id = "tableRow";
       timesTable.appendChild(tableRow);
-        for(var j = 0; j < 13; j++) {
-            var tableData = document.createElement("td");
-            tableData.id = "tableData";
-            tableRow.appendChild(tableData);
-            tableData.textContent = i * j;
+      
+    for(var j = 0; j < 13; j++) {
+      var tableCol;
             
+      if(i === 0) {
+        tableCol = document.createElement("th");
+        tableCol.textContent = j;
+              
+      } else {
+              
+          if(j === 0) {
+            tableCol = document.createElement("th");
+            tableCol.textContent = i;
+              
+          } else {
+            tableCol = document.createElement("td");  
+            tableCol.textContent = i * j;  
+          }        
         }
+        tableCol.id = "tableData";
+        tableRow.appendChild(tableCol);          
       }
     }
+  }
  
 // ----- END FUN STUFF -----//
