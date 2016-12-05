@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- https://goo.gl/NIeGJX -->
+<html>
+  <head>
+    <title> Custom Table </title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script type="text/javascript" src="../scripts.js"></script>
+  </head>
+  
+  <body onload="buildTimesTable();">
+    <div class="container"> 
+        
+      <div class="navbar">
+        <header>
+	  <nav>
+          <img id="navlogo" src="../images/profilepic.png" width="50px" height="50px;">
+	    <ul>
+	      <li><a class="navtext" href="https://perryma.tk/lilrivenbot/"> HOME </a></li>
+              <li><a class="navtext" href="https://perryma.tk/lilrivenbot/aboutme"> ABOUT ME </a></li>
+	      <li><a class="navtext" href="https://perryma.tk/lilrivenbot/contact"> CONTACT </a></li>
+              <li><a class="active" href="https://perryma.tk/lilrivenbot/funstuff"> FUN STUFF </a></li>
+	      <li><a class="navtext" href="https://perryma.tk/lilrivenbot/uhh"> HUH? </a></li>
+	    </ul>
+	  </nav>
+        </header>     
+      </div>
+        
+        <!-- START BODY -->
+        
+    <div class="body" id="tableBorder">
+        
+      <h1 class="header"> Custom Table </h1> 
+      
+      Table Width: <input type="range" id="tableWidth" min="1" max="20" value="10" onchange ="buildTimesTable2();"><br>
+      
+      Table Height: <input type="range" id="tableHeight" min="1" max="20" value="10" onchange ="buildTimesTable2();"><br>
+      
+      <br>
+        
+    </div>
+        
+        <!-- END BODY -->
+        
+        <!-- START FOOTER -->
+        
+    <div class="footer">
+        
+      <footer>
+        <nav>
+          <ul>
+	    <li><a href="https://perryma.tk/lilrivenbot"> HOME </a></li>
+            <li><a href="https://perryma.tk/lilrivenbot/aboutme"> ABOUT ME</a></li>
+            <li><a href="https://perryma.tk/lilrivenbot/contact"> CONTACT </a></li>
+            <li><a class="active"> FUN STUFF </a></li>
+            <li><a href="https://perryma.tk/lilrivenbot/uhh"> HUH? </a></li>
+	  </ul>
+        </nav>
+      </footer> 
+    </div>
+    
+    </div>
+        
+        <!-- END FOOTER -->
+        
+        <!-- END CONTAINER -->
+
+  </body> 
+</html>

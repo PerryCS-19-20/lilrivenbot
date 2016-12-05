@@ -137,5 +137,61 @@ function chalkboard() {
       }
     }
   }
+  
+  function buildTimesTable2() {
+    // Remove the multiplication table if it already exists.
+    var timesTable = document.getElementById("timesTable");
+    if (timesTable !== null) {
+        timesTable.parentNode.removeChild(timesTable);        
+    }
+
+    // Create a table for the multiplication table
+    var timesTable = document.createElement("table");
+    timesTable.id = "timesTable";
+    timesTable.class = "multiply";
+
+    for (var k = 0; k < width; k++) {
+      var tableRow = document.createElement("tr");
+      tableRow.id = "tableRow";
+      timesTable.appendChild(tableRow);
+      
+    for (var l = 0; l < height; l++) {
+      var tableCol;
+            
+      if(l === 0) {
+        tableCol = document.createElement("th");
+        tableCol.textContent = l;
+              
+      } else {
+              
+          if(k === 0) {
+            tableCol = document.createElement("th");
+            tableCol.textContent = k;
+              
+          } else {
+            tableCol = document.createElement("td");  
+            tableCol.textContent = k * l;  
+          }        
+        }
+        tableCol.id = "tableData";
+        tableRow.appendChild(tableCol);          
+      }  
+    }     
+
+    // Add the table to the document's body
+    var body = document.getElementById("tableBorder");
+    body.appendChild(timesTable);
+
+    // Get the table width and height
+    var width = document.getElementById("tableWidth").value;
+    k = width;
+    
+    var height = document.getElementById("tableHeight").value;
+    l = height;
+    
+
+    // Fill in the multiplication table
+
+    }
  
 // ----- END FUN STUFF -----//
