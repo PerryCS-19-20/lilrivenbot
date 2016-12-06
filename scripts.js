@@ -101,6 +101,8 @@ function chalkboard() {
     }
   }
   
+  var i;
+  var j;
   function buildTimesTable() {
     var timesTable = document.createElement("table");
     timesTable.id = "timesTable";
@@ -109,12 +111,12 @@ function chalkboard() {
     var body = document.getElementById("tableBorder");
     body.appendChild(timesTable);
       
-    for (var i = 0; i < 13; i++) {
+    for (i = 0; i < 13; i++) {
       var tableRow = document.createElement("tr");
       tableRow.id = "tableRow";
       timesTable.appendChild(tableRow);
       
-    for(var j = 0; j < 13; j++) {
+    for(j = 0; j < 13; j++) {
       var tableCol;
             
       if(i === 0) {
@@ -139,59 +141,53 @@ function chalkboard() {
   }
   
   function buildTimesTable2() {
+      
     // Remove the multiplication table if it already exists.
     var timesTable = document.getElementById("timesTable");
     if (timesTable !== null) {
         timesTable.parentNode.removeChild(timesTable);        
     }
-
-    // Create a table for the multiplication table
+                
     var timesTable = document.createElement("table");
     timesTable.id = "timesTable";
     timesTable.class = "multiply";
-
-    for (var k = 0; k < width; k++) {
+    
+    var width = document.getElementById("tableWidth").value;
+    var height = document.getElementById("tableHeight").value;
+    l = height;
+    k = width;
+    
+    
+    var body = document.getElementById("tableBorder");
+    body.appendChild(timesTable);
+      
+    for (i = 0; i < height; i++) {
       var tableRow = document.createElement("tr");
       tableRow.id = "tableRow";
       timesTable.appendChild(tableRow);
       
-    for (var l = 0; l < height; l++) {
+    for(j = 0; j < width; j++) {
       var tableCol;
             
-      if(l === 0) {
+      if(i === 0) {
         tableCol = document.createElement("th");
-        tableCol.textContent = l;
+        tableCol.textContent = j;
               
       } else {
               
-          if(k === 0) {
+          if(j === 0) {
             tableCol = document.createElement("th");
-            tableCol.textContent = k;
+            tableCol.textContent = i;
               
           } else {
             tableCol = document.createElement("td");  
-            tableCol.textContent = k * l;  
+            tableCol.textContent = i * j;  
           }        
         }
         tableCol.id = "tableData";
         tableRow.appendChild(tableCol);          
-      }  
-    }     
-
-    // Add the table to the document's body
-    var body = document.getElementById("tableBorder");
-    body.appendChild(timesTable);
-
-    // Get the table width and height
-    var width = document.getElementById("tableWidth").value;
-    k = width;
-    
-    var height = document.getElementById("tableHeight").value;
-    l = height;
-    
-
-    // Fill in the multiplication table
-
+      }
     }
- 
+  }
+    
 // ----- END FUN STUFF -----//
