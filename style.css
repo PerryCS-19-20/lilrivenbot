@@ -123,13 +123,18 @@
       text-decoration: none;
       }
       
-      .iconLink:link {
+    .iconLink:link {
       color: #000000;  
       }
     
     .iconLink:visited {
       color: #000000;  
       }
+      
+    .iconLink:active {
+      color: #000000;    
+      }
+      
 	
     header nav {
       white-space: nowrap;
