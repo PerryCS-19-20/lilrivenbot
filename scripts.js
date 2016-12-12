@@ -139,7 +139,8 @@ function chalkboard() {
       }
     }
   }
-  
+  var l = 0;
+  var k = 0;
   function buildTimesTable2() {
       
     // Remove the multiplication table if it already exists.
@@ -153,35 +154,32 @@ function chalkboard() {
     timesTable.class = "multiply";
     
     var width = document.getElementById("tableWidth").value;
-    var height = document.getElementById("tableHeight").value;
-    l = height;
-    k = width;
-    
+    var height = document.getElementById("tableHeight").value;    
     
     var body = document.getElementById("tableBorder");
     body.appendChild(timesTable);
       
-    for (i = 0; i < height; i++) {
+    for (k = 0; k < height; k++) {
       var tableRow = document.createElement("tr");
       tableRow.id = "tableRow";
       timesTable.appendChild(tableRow);
       
-    for(j = 0; j < width; j++) {
+    for(l = 0; l < width; l++) {
       var tableCol;
             
-      if(i === 0) {
+      if(k === 0) {
         tableCol = document.createElement("th");
-        tableCol.textContent = j;
+        tableCol.textContent = l;
               
       } else {
               
-          if(j === 0) {
+          if(l === 0) {
             tableCol = document.createElement("th");
-            tableCol.textContent = i;
+            tableCol.textContent = k;
               
           } else {
             tableCol = document.createElement("td");  
-            tableCol.textContent = i * j;  
+            tableCol.textContent = k * l;  
           }        
         }
         tableCol.id = "tableData";

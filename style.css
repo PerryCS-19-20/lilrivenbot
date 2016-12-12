@@ -118,6 +118,18 @@
       border: 2px;
       border-style: solid;		  
       }
+      
+    .iconLink {
+      text-decoration: none;
+      }
+      
+      .iconLink:link {
+      color: #000000;  
+      }
+    
+    .iconLink:visited {
+      color: #000000;  
+      }
 	
     header nav {
       white-space: nowrap;
