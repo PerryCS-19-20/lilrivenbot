@@ -187,5 +187,69 @@ function chalkboard() {
       }
     }
   }
+  
+  function buildMap(x) {
+
+    var newList = document.createElement("ul");
+    var newSublist = document.createElement("ul");
+    var newItem = document.createElement("li");
+    newItem.textContent = "Class Projects";
+    
+    newList.className = "linkList";
+    
+      sitemapWrapper = document.getElementById(x);
+      sitemapWrapper.appendChild(newList);
+
+      newList.appendChild(buildList("Home", "../index.html"));
+      sitemapWrapper.appendChild(newList);
+      
+      newList.appendChild(buildList("About Me", "../aboutme.html"));
+      sitemapWrapper.appendChild(newList);
+     
+      newList.appendChild(buildList("Contact", "../contact.html"));
+      sitemapWrapper.appendChild(newList);
+      
+      newList.appendChild(newItem);
+      sitemapWrapper.appendChild(newList);
+      
+      
+        //CLASS PROJECTS
+        newSublist.appendChild(buildList("Breakout", "breakout.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("Javascript Events", "javascriptevents.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("HTML Test", "htmltest.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("To Do List", "todolist.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("Chalkboard", "chalkboard.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("Tic-Tac-Toe", "tictactoe.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("Multiplication Table", "multiplicationtable.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("Slider Table", "customtable.html"));
+        newItem.appendChild(newSublist);
+
+        newSublist.appendChild(buildList("Breakout", "breakout.html"));
+        newItem.appendChild(newSublist);
+          
+      }
+  function buildList(name, link) {
+    var a = document.createElement("a");
+    var li = document.createElement("li");
+    a.textContent = name;
+    a.href = link;
+    li.appendChild(a);
+    a.className = "links";
+    return(li);     
+    }
     
 // ----- END FUN STUFF -----//
