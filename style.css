@@ -409,28 +409,7 @@
       }
       
 /*----------Fun Stuff----------*/
-
-
-    .linkList {
-      text-decoration: none;
-      padding: 0;
-      font-weight: 400;
-      color: #000000;
-      list-style-type: none;
-      transition: all 300ms ease-in-out;
-      -webkit-transition: all 300ms ease-in-out;
-      -moz-transition: all 300ms ease-in-out;
-      -o-transition: all 300ms ease-in-out;
-      }
-    
-    .linkList li {
-      margin: 100px;
-      }
-      
-    .linkList li a {
-      font-size: 60px;
-      }
-      
+     
     canvas {
       border: 1px solid black;
       }
@@ -484,8 +463,32 @@
       height: 50px;
       }
       
-    #inputValue {
+    .inputValue {
       margin: 5px;    
+      }
+      
+    .siteList {
+      margin: 10px auto;
+      display: table;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 400;
+      }     
+     
+      
+    .siteLinks {
+      text-decoration: none;
+      padding: 10px;
+      font-size: 28px;
+      color: #000000;
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+      -moz-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;            
+      }
+  
+    .siteLinks:hover {
+      color: #99CBC2;
       }
 
 

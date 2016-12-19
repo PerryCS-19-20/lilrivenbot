@@ -188,14 +188,24 @@ function chalkboard() {
     }
   }
   
+  
+  function calculate(){
+    var l = document.getElementById("length").value;
+    var w = document.getElementById("width").value;
+    var h = document.getElementById("height").value;
+
+    var vol = document.getElementById("volume");
+    
+    vol.value =(l*w*h);
+      
+    }
   function buildMap(x) {
 
     var newList = document.createElement("ul");
     var newSublist = document.createElement("ul");
     var newItem = document.createElement("li");
     newItem.textContent = "Class Projects";
-    
-    newList.className = "linkList";
+    newList.className = "siteList";
     
       sitemapWrapper = document.getElementById(x);
       sitemapWrapper.appendChild(newList);
@@ -238,7 +248,7 @@ function chalkboard() {
         newSublist.appendChild(buildList("Slider Table", "customtable.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("Breakout", "breakout.html"));
+        newSublist.appendChild(buildList("Calculator", "calculator.html"));
         newItem.appendChild(newSublist);
           
       }
@@ -248,7 +258,7 @@ function chalkboard() {
     a.textContent = name;
     a.href = link;
     li.appendChild(a);
-    a.className = "links";
+    a.className = "siteLinks";
     return(li);     
     }
     
