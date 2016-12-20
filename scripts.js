@@ -210,13 +210,13 @@ function chalkboard() {
       sitemapWrapper = document.getElementById(x);
       sitemapWrapper.appendChild(newList);
 
-      newList.appendChild(buildList("Home", "../index.html"));
+      newList.appendChild(buildList("Home", "index.html"));
       sitemapWrapper.appendChild(newList);
       
-      newList.appendChild(buildList("About Me", "../aboutme.html"));
+      newList.appendChild(buildList("About Me", "aboutme.html"));
       sitemapWrapper.appendChild(newList);
      
-      newList.appendChild(buildList("Contact", "../contact.html"));
+      newList.appendChild(buildList("Contact", "contact.html"));
       sitemapWrapper.appendChild(newList);
       
       newList.appendChild(newItem);
@@ -224,31 +224,31 @@ function chalkboard() {
       
       
         //CLASS PROJECTS
-        newSublist.appendChild(buildList("Breakout", "breakout.html"));
+        newSublist.appendChild(buildList("Breakout", "funstuff/breakout.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("Javascript Events", "javascriptevents.html"));
+        newSublist.appendChild(buildList("Javascript Events", "funstuff/javascriptevents.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("HTML Test", "htmltest.html"));
+        newSublist.appendChild(buildList("HTML Test", "funstuff/htmltest.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("To Do List", "todolist.html"));
+        newSublist.appendChild(buildList("To Do List", "funstuff/todolist.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("Chalkboard", "chalkboard.html"));
+        newSublist.appendChild(buildList("Chalkboard", "funstuff/chalkboard.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("Tic-Tac-Toe", "tictactoe.html"));
+        newSublist.appendChild(buildList("Tic-Tac-Toe", "funstuff/tictactoe.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("Multiplication Table", "multiplicationtable.html"));
+        newSublist.appendChild(buildList("Multiplication Table", "funstuff/multiplicationtable.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("Slider Table", "customtable.html"));
+        newSublist.appendChild(buildList("Slider Table", "funstuff/customtable.html"));
         newItem.appendChild(newSublist);
 
-        newSublist.appendChild(buildList("Calculator", "calculator.html"));
+        newSublist.appendChild(buildList("Calculator", "funstuff/calculator.html"));
         newItem.appendChild(newSublist);
           
       }
