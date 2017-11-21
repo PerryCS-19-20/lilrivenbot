@@ -95,10 +95,10 @@ function chalkboard() {
       WON = true;
         
       spanTac.textContent  = player + " " + "is the winner!";
-      cell1.style.backgroundColor = "#b3d8d2";
-      cell2.style.backgroundColor = "#b3d8d2";
-      cell3.style.backgroundColor = "#b3d8d2";
-    }
+      cell1.style.backgroundColor = "#efab99";
+      cell2.style.backgroundColor = "#efab99";
+      cell3.style.backgroundColor = "#efab99";
+    } 
   }
   
   var i;
