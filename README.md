@@ -1,3 +1,3 @@
 # lilrivenbot
 Something_Something_Software_Engineering
-This is a website for Software Engineering
+I work on this when I'm bored
