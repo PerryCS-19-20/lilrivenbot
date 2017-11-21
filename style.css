@@ -1,3 +1,8 @@
+/*
+#fdd7ce - Pink
+#efab99 - Pink (on hover)
+*/
+
 /*----------General----------*/   
 
     @font-face {
@@ -15,11 +20,11 @@
       }
       
     ::selection {
-      background: #99CBC2;
+      background: #fdd7ce;
       color: #ffffff;
       }
     ::-moz-selection {
-      background: #99CBC2;
+      background: #fdd7ce;
       color: #ffffff;
       }
       
@@ -60,7 +65,7 @@
     .header {
       margin-top: 35px;
       margin-bottom: 20px;
-      color: #99CBC2;
+      color: #fdd7ce;
       font-size: 50px;
       }
 
@@ -85,13 +90,13 @@
       }
 	
     .links:hover {
-      color: #99CBC2;
+      color: #fdd7ce;
       }
 	
 /*----------Index----------*/
 	
     #title {
-      color: #99CBC2;
+      color: #fdd7ce;
       font-size: 100px;
       font-weight: bold;
       font-family: Kalos;
@@ -107,7 +112,7 @@
     .name {
       font-size:75px;
       margin:20px;
-      color: #99CBC2;		
+      color: #fdd7ce;		
       }
 	
 /*----------Header----------*/
@@ -145,7 +150,7 @@
       top: 0px;
       right: 0px;
       left: 0px;
-      background-color: #99CBC2;
+      background-color: #fdd7ce;
       }
 	
     header nav  ul {
@@ -169,11 +174,11 @@
       }
 	
     header nav  ul  li  a:hover {
-      background-color: #91E6D6;
+      background-color: #efab99;
       }
 	
     header nav  ul  li  .active {
-      background-color: #91E6D6;
+      background-color: #efab99;
       color: #ffffff;	
       font-size: 35px;	
       padding: 25px 30px;
@@ -193,7 +198,7 @@
       bottom: 0;
       right: 0;
       padding: 15px 10px 15px 10px;
-      background-color: #99CBC2;
+      background-color: #fdd7ce;
       }
 	
     footer nav  ul {
@@ -217,7 +222,7 @@
       }
 	
     footer nav  ul  li  a:hover {
-      color: #91E6D6;
+      color: #efab99;
       }
 /*----------Contact----------*/
 
@@ -272,7 +277,7 @@
       bottom: 0;
       right: 0;
       margin: auto;
-      background: #99CBC2 url(img/link.png) no-repeat center 20%;
+      background: #fdd7ce url(img/link.png) no-repeat center 20%;
       background-size: 50px 50px;
       opacity: 0;
       transition: all 0.6s;
@@ -319,7 +324,7 @@
       }
 	
     .buddylinks:hover {
-      color: #99CBC2;
+      color: #fdd7ce;
       }
 
     @media (max-width: 500px) {
@@ -373,7 +378,7 @@
       bottom: 0;
       right: 0;
       margin: auto;
-      background: #99CBC2 url(img/link.png) no-repeat center 20%;
+      background: #fdd7ce url(img/link.png) no-repeat center 20%;
       background-size: 50px 50px;
       opacity: 0;
       transition: all 0.6s;
@@ -488,7 +493,7 @@
       }
   
     .siteLinks:hover {
-      color: #99CBC2;
+      color: #fdd7ce;
       }
 
 
@@ -503,7 +508,7 @@
       text-decoration: none;
       font-size: 35px;
       font-weight: bold;
-      color: #99CBC2;
+      color: #fdd7ce;
       transition: all 300ms ease-in-out;
       -webkit-transition: all 300ms ease-in-out;
       -moz-transition: all 300ms ease-in-out;
@@ -511,5 +516,5 @@
       }
 	
     .missingbold:hover {
-      color: #91E6D6;
+      color: #efab99;
       }
