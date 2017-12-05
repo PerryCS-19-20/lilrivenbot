@@ -70,9 +70,10 @@
       }
 
     .list {
+	  padding: 0;
       margin: 10px auto;
       display: table;
-      text-align: center;
+      text-align: left;
       font-size: 26px;
       font-weight: 400;
       }
